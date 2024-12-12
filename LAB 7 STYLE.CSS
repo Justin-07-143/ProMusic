@@ -1,0 +1,220 @@
+body {
+    margin:0;
+}
+.ulo{
+    margin:0px 50px 0px 50px;
+    background-color: rgba(248, 245, 245, 0.521);
+    font-family: sans-serif;
+    text-align: center;
+    font-family: serif;
+    color: rgb(23, 46, 179);
+    margin-top: 0%;
+    overflow: hidden;
+}
+.navtop{
+    overflow: hidden;
+    background-color: rgba(250, 250, 250, 0.644);
+    margin:0px 50px 0px 50px;
+}
+.navtop a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    margin:0px 50px 0px 50px;
+}
+.logoko {
+    height:99px;
+    width: 200px;
+    display: flex;
+    padding-left: 540px;
+    margin: 0px;
+}
+.sabiko {
+    font-size: 0.8em;
+    font-family: fantasy;
+    color: black;
+    letter-spacing: 1px;
+}
+.navtop a:hover{
+    background-color: rgb(190, 47, 155);
+    color: rgb(101, 238, 227);
+}
+.katawan{
+    background-color: white;
+    padding: 47px 350px 50px 450px;
+    margin:0px 50px 0px 50px;
+    overflow: hidden;
+}
+#outerbox {
+    width: 350px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    box-shadow: 5px 5px 15px rgb(172, 163, 147);
+    border-radius: 10px;
+}
+#sliderbox {
+    position: relative;
+    display: flex;
+    animation: slider 20s infinite;
+    animation-duration: 50s;
+    width:0px;
+    animation-iteration-count: infinite;
+    align-items: center;
+}
+#sliderbox img {
+    float: left;
+    align-items: center;
+    justify-content: center;
+    width: 5000px;
+}
+@keyframes slider {
+    0%{
+        left: 0px;
+    }
+    10%{
+        left: -350px;
+    }
+    20%{
+        left: -700px;
+    }
+    30%{
+        left: -1050px;
+    }
+    40%{
+        left: -1400px;
+    }
+    50%{
+        left: -1750px;
+    }
+    60%{
+        left: -2100px;
+    }
+    70%{
+        left: -2450px;
+    }
+    80%{
+        left: -2800px;
+    }
+    100%{
+        left: -3150px;
+    }
+}
+.paa{
+    overflow: hidden;
+    background-color:white;
+    margin:0px 50px 1px 50px;
+}
+.paa a{
+    display: block;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    margin:0px 450px 0px 450px;
+    background-color: blanchedalmond;
+}
+.paa a:hover{
+    background-color: blue;
+    color: white;
+} 
+.open-modal{
+    padding: 14px 16px;
+    color: black;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+}
+.open-modal:hover{
+    background-color: rgb(190, 47, 155);
+    color: rgb(101, 238, 227);
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-toggle{
+    display: none;
+}
+.modal-toggle:checked+.modal{
+    display: block;
+}
+.modal-content{
+    background-color: #eeeeee;
+    margin: 15% auto;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid#726868;
+    width: 350px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    height: auto;
+}
+.modal-content1{
+    background-color: #eeeeee;
+    margin: 6% auto;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid#726868;
+    width: 350px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    height: auto;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover{
+    color: black;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.label{
+    margin: 10px 0 5px;
+    text-align: left;
+}
+input[type="text"],input[type="password"],input[type="date"],input[type="email"]{
+    padding: 10px;
+    width: 90%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button[type="submit"]{
+    background-color: #d465af;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+button[type="submit"]:hover{
+    background-color: #eb1290;
+}
+.regbtn{
+    float: right;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline; 
+}
